@@ -9,6 +9,6 @@ const route = express.Router();
 route.post("/register",singleUpload,register);
 route.post("/login",login);
 route.post("/profile/update",upload.single('file'),isAuthenticated, updateProfile);
-route.get("/logout",isAuthenticated,logout);
+route.get("/logout",logout);
 
 export default route;
